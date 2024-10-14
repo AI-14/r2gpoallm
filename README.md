@@ -1,3 +1,3 @@
-# R2G-POA-LLM
+# R2gPoaLlm
 
 The code will be made publicly available after the acceptance of the paper.
