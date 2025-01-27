@@ -76,7 +76,6 @@ pip install -U datasets
 - For each dataset i.e. IUXRAY & COVCTR, follow:
   - Follow steps given in [PKATransNet](https://github.com/AI-14/pkatransnet) and get the results after running their experiments. In `fg-res` directory, rename `beam-search-predictions.csv` file to `test_p.csv` file and move this file to corresponding sub-directory in `datasets` directory.
 - Move the `datasets` directory from PKATransNet into this repository.
-- If you want, you may use any other embryonic model like [R2Gen](https://github.com/zhjohnchan/R2Gen) or any model that is smaller than an LLM and utilizes images for report generation.
 
 ### Experiments with IUXRAY dataset:
 - Paste your huggingface access token in front of `--hf_token` in `scripts/iuxray/base_sft_like.sh`, `scripts/iuxray/base_po_like.sh`, `scripts/iuxray/sft.sh`, and `scripts/iuxray/po.sh` files.
