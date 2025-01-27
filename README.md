@@ -29,7 +29,7 @@ If you find our work and/or this repository useful in your research, please cons
 
 ```bibtex
 @article{amaan2025r2gpoallm,
-  title={Engaging Preference Optimization Alignment in Large Language Model for Continual Radiology Report Generation: A Hybrid Approach},
+  title={Engaging preference optimization alignment in large language model for continual radiology report generation: A hybrid approach},
   author={Izhar, Amaan and Idris, Norisma and Japar, Nurul},
   journal={Cognitive Computation},
   volume={17},
