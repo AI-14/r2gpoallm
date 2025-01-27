@@ -1,0 +1,32 @@
+python train_test_po.py \
+--po_train_filepath datasets/iuxray/po_train.csv \
+--po_val_filepath datasets/iuxray/po_val.csv \
+--po_test_filepath datasets/iuxray/po_test.csv \
+--base_model_repo sft-ckpts/sft-merged \
+--output_dir po-ckpts \
+--logging_dir po-logs \
+--adapter_model_dir po-adapter \
+--merged_model_dir po-merged \
+--results_dir po-res \
+--lora_r 64 \
+--lora_alpha 32 \
+--lora_dropout 0.1 \
+--lora_bias none \
+--lora_task_type CAUSAL_LM \
+--num_train_epochs 1 \
+--per_device_train_batch_size 4 \
+--per_device_eval_batch_size 4 \
+--gradient_accumulation_steps 1 \
+--eval_strategy steps \
+--optim paged_adamw_32bit \
+--logging_steps 10 \
+--learning_rate 5e-5 \
+--weight_decay 1e-3 \
+--warmup_ratio 3e-2 \
+--lr_scheduler_type cosine_with_restarts \
+--save_total_limit 1 \
+--load_best_model_at_end True \
+--max_seq_len 800 \
+--max_new_tokens 80 \
+--hf_token \
+--seed 1234

@@ -1,0 +1,33 @@
+python train_test_sft.py \
+--sft_train_filepath datasets/iuxray/sft_train.csv \
+--sft_val_filepath datasets/iuxray/sft_val.csv \
+--sft_test_filepath datasets/iuxray/sft_test.csv \
+--base_model_repo microsoft/Phi-3-mini-4k-instruct \
+--output_dir sft-ckpts \
+--logging_dir sft-logs \
+--adapter_model_dir sft-adapter \
+--merged_model_dir sft-merged \
+--results_dir sft-res \
+--lora_r 64 \
+--lora_alpha 32 \
+--lora_dropout 0.1 \
+--lora_bias none \
+--lora_task_type CAUSAL_LM \
+--num_train_epochs 1 \
+--per_device_train_batch_size 4 \
+--per_device_eval_batch_size 4 \
+--gradient_accumulation_steps 1 \
+--eval_strategy steps \
+--optim paged_adamw_32bit \
+--logging_steps 10 \
+--learning_rate 5e-5 \
+--weight_decay 1e-3 \
+--warmup_ratio 3e-2 \
+--lr_scheduler_type cosine_with_restarts \
+--save_total_limit 1 \
+--load_best_model_at_end True \
+--max_seq_len 800 \
+--max_new_tokens 80 \
+--dataset_text_field prompt \
+--hf_token \
+--seed 1234
