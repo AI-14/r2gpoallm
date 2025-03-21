@@ -61,7 +61,7 @@ If you find this work useful, please consider citing our paper and giving this r
 ---
 
 ### 📦 Environment Setup
-
+**Run**:
 ```bash
 # Clone the repo
 git clone https://github.com/AI-14/r2gpoallm.git
@@ -79,7 +79,7 @@ pip install -U datasets
 
 ---
 
-### 📁 Dataset Preparation
+### 📁 Dataset Setup
 
 1. Follow instructions from the [PKATransNet](https://github.com/AI-14/pkatransnet) repository.
 2. After running experiments there, rename `beam-search-predictions.csv` to `test_p.csv`.
@@ -90,7 +90,7 @@ pip install -U datasets
 
 ### 🔬 Running Experiments
 
-#### IU X-Ray
+#### IUXRAY
 
 Update your Huggingface token in the following files:
 - `scripts/iuxray/base_sft_like.sh`
@@ -98,8 +98,7 @@ Update your Huggingface token in the following files:
 - `scripts/iuxray/sft.sh`
 - `scripts/iuxray/po.sh`
 
-Then, run:
-
+**Run**:
 ```bash
 source scripts/iuxray/pp.sh                  
 source scripts/iuxray/base_sft_like.sh       
@@ -118,8 +117,7 @@ Update your Huggingface token in the following files:
 - `scripts/covctr/sft.sh`
 - `scripts/covctr/po.sh`
 
-Then, run:
-
+**Run**:
 ```bash
 source scripts/covctr/pp.sh                  
 source scripts/covctr/base_sft_like.sh       
@@ -132,8 +130,7 @@ source scripts/covctr/po.sh
 
 ## 🧹 Clean Up
 
-To safely remove everything:
-
+**Run**:
 ```bash
 cd ..
 conda deactivate
