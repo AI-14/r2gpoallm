@@ -88,9 +88,9 @@ pip install -U datasets
 
 ---
 
-## 🔬 Running Experiments
+### 🔬 Running Experiments
 
-### IU X-Ray
+#### IU X-Ray
 
 Update your Huggingface token in the following files:
 - `scripts/iuxray/base_sft_like.sh`
@@ -110,7 +110,7 @@ source scripts/iuxray/po.sh
 
 ---
 
-### COVCTR
+#### COVCTR
 
 Update your Huggingface token in the following files:
 - `scripts/covctr/base_sft_like.sh`
