@@ -55,7 +55,7 @@ If you find this work useful, please consider citing our paper and giving this r
 | GPU              | ≥ 24 GB VRAM                       |
 | RAM              | ≥ 16 GB                            |
 | Disk Space       | ≥ 200 GB                           |
-| Env Modules      | Miniconda, Python 3.10             |
+| Env Modules      | Miniconda                          |
 | Dependencies     | CUDA ≥ 12.1, Huggingface token     |
 
 ---
