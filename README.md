@@ -61,7 +61,7 @@ If you find this work useful, please consider citing our paper and giving this r
 ---
 
 ### 📦 Environment Setup
-**Run:**
+1. Run:
 ```bash
 # Clone the repo
 git clone https://github.com/AI-14/r2gpoallm.git
@@ -92,13 +92,13 @@ pip install -U datasets
 
 #### IUXRAY
 
-Update your Huggingface token in the following files:
-- `scripts/iuxray/base_sft_like.sh`
-- `scripts/iuxray/base_po_like.sh`
-- `scripts/iuxray/sft.sh`
-- `scripts/iuxray/po.sh`
+1. Update your Huggingface token in the following files:
+    - `scripts/iuxray/base_sft_like.sh`
+    - `scripts/iuxray/base_po_like.sh`
+    - `scripts/iuxray/sft.sh`
+    - `scripts/iuxray/po.sh`
 
-**Run:**
+2. Run:
 ```bash
 source scripts/iuxray/pp.sh                  
 source scripts/iuxray/base_sft_like.sh       
@@ -111,13 +111,13 @@ source scripts/iuxray/po.sh
 
 #### COVCTR
 
-Update your Huggingface token in the following files:
-- `scripts/covctr/base_sft_like.sh`
-- `scripts/covctr/base_po_like.sh`
-- `scripts/covctr/sft.sh`
-- `scripts/covctr/po.sh`
+1. Update your Huggingface token in the following files:
+    - `scripts/covctr/base_sft_like.sh`
+    - `scripts/covctr/base_po_like.sh`
+    - `scripts/covctr/sft.sh`
+    - `scripts/covctr/po.sh`
 
-**Run:**
+2. Run:
 ```bash
 source scripts/covctr/pp.sh                  
 source scripts/covctr/base_sft_like.sh       
@@ -130,7 +130,7 @@ source scripts/covctr/po.sh
 
 ## 🧹 Clean Up
 
-**Run:**
+1. Run:
 ```bash
 cd ..
 conda deactivate
